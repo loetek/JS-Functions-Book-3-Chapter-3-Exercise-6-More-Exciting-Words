@@ -11,12 +11,12 @@ function addExcitement (theWordArray) {
 
     for (let i = 0; i < theWordArray.length; i++) {
         
-       if (i % 3 === 0){
-            buildMeUp += `${theWordArray[i]} ! `;
+       if (i % 3 === 0 && i > 0){
+            buildMeUp += ` ${theWordArray[i]} ! `;
              console.log (buildMeUp);
        }
         else{
-            buildMeUp += `${theWordArray[i]}`;
+            buildMeUp += ` ${theWordArray[i]} `;
             console.log (buildMeUp);
 
         }
